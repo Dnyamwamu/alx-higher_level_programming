@@ -10,9 +10,10 @@
  */
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
-} listint_t;
+	int n;
+	struct listint_s *next;
+}
+listint_t;
 
 /**
  * check_cycle - checks if a singly linked list has a cycle in it
@@ -21,16 +22,15 @@ typedef struct listint_s
  */
 int check_cycle(listint_t *list)
 {
-    listint_t *slow = list, *fast = list;
+	listint_t *slow = list, *fast = list;
 
-    while (fast && fast->next)
-    {
-        slow = slow->next;
-        fast = fast->next->next;
+	while (fast && fast->next)
+	{
+		slow = slow->next;
+		fast = fast->next->next;
 
-        if (slow == fast)
-            return 1;
-    }
-
-    return 0;
+		if (slow == fast)
+			return (1);
+	}
+	return (0);
 }
