@@ -2,4 +2,5 @@
 str = "Holberton School"
 
 # Complete the source code
-print(f"{str * 3}{str[:9]}")
+print(str + str + str)
+print(str[:9])
