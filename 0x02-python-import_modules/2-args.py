@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-from sys import argv
-
 if __name__ == "__main__":
+    from sys import argv
     argc = len(argv) - 1  # Subtract 1 to exclude the script name
     args = argv[1:]  # Exclude the script name from the list of arguments
 
