@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-def switch(a, b):
-    # Your code goes here (line 4)
-    a, b = b, a
-    return a, b
+#!/usr/bin/python3
+a = 89
+b = 10
+a, b = b, a
+print("a={:d} - b={:d}".format(a, b))
