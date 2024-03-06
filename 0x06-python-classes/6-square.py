@@ -2,6 +2,7 @@
 
 """Square: A class that defines a square."""
 
+
 class Square:
     """Empty class representing a square."""
 
