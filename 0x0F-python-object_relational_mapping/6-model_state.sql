@@ -6,3 +6,5 @@ CREATE TABLE IF NOT EXISTS states (
     name VARCHAR(128) NOT NULL,
     PRIMARY KEY (id)
 ) ENGINE=InnoDB;
+
+SHOW CREATE TABLE states;
