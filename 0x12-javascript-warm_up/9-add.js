@@ -10,5 +10,5 @@ const num2 = parseInt(process.argv[3]);
 if (!isNaN(num1) && !isNaN(num2)) {
   console.log(add(num1, num2));
 } else {
-  console.log('Arguments are not integers');
+  console.log('NaN');
 }
