@@ -1,11 +1,12 @@
 #!/usr/bin/node
 
-const args = process.argv.slice(2).map(Number);
+const myObject = {
+  type: 'object',
+  value: 12
+};
 
-if (args.length <= 1) {
-  console.log(0);
-} else {
-  const replacedArgs = args.map(num => num === 12 ? 89 : num);
-  const sortedArgs = replacedArgs.sort((a, b) => b - a);
-  console.log(sortedArgs[1]);
-}
+console.log(myObject);
+
+const updatedObject = { ...myObject, value: 89 };
+
+console.log(updatedObject);
