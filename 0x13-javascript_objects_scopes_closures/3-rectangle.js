@@ -1,5 +1,7 @@
 #!/usr/bin/node
 
+// This script defines a Rectangle class with specified features
+
 class Rectangle {
   constructor(w, h) {
     if (w > 0 && h > 0) {
