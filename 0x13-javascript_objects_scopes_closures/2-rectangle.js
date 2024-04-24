@@ -3,7 +3,8 @@
 class Rectangle {
   constructor(w, h) {
     if (w <= 0 || h <= 0 || isNaN(w) || isNaN(h)) {
-      return {}; // Return an empty object if w or h is <= 0 or NaN
+      this.width = undefined;
+      this.height = undefined;
     } else {
       this.width = w;
       this.height = h;
