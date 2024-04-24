@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-function executeXTimes(x, theFunction) {
-  for (let i = 0; i < x; i++) {
-    theFunction();
-  }
+const { executeXTimes } = require('./executeXTimes');
+
+function myFunction() {
+  console.log('Executing my function');
 }
 
-module.exports.executeXTimes = executeXTimes;
+executeXTimes(5, myFunction);
