@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-const { executeXTimes } = require('./executeXTimes');
-
-function myFunction() {
-  console.log('Executing my function');
+function callMeMoby(x, theFunction) {
+  for (let i = 0; i < x; i++) {
+    theFunction();
+  }
 }
 
-executeXTimes(5, myFunction);
+module.exports.callMeMoby = callMeMoby;
